@@ -131,9 +131,33 @@ img {
 
  /* tablet */
 
- @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .container {
         width: 95%;
     }
  }
 
+/* mobile */
+
+@media screen and (max-width:480px) {
+    .row {
+        flex-direction: column;
+    }
+    .lessons .col,
+    .steps .col,
+    .why-us .col-left,
+    .why-us .col-right{
+        width: 100%;
+    }
+    .col:not(:last-child){
+        padding-bottom: 60px;
+    }
+    .why-us{
+        background-color: #222222;
+        margin-bottom: 0;
+        padding-top: 69px;
+    }
+    .steps{
+        margin-bottom: 0;
+    }
+}
